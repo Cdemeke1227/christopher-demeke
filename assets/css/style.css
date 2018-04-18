@@ -27,10 +27,12 @@ h2 {
     font-size: 50px;
     text-align: center;
 }
+
 p.top {
     font-size: 20px;
     text-align: center;
-    color: #FFFFFF;
+    color: #FFFFFF; 
+    margin: 20px 100px;
 }
 p.lead {
     text-align: center;
@@ -89,7 +91,7 @@ figcaption p {
 }
 
 .jumbotron .scroll-down {
-    height: 80px;
+    height: 100px;
     width: 100px;
     display: block;
     position: absolute;
@@ -102,6 +104,69 @@ figcaption p {
 .fa-chevron-down {
     size: 7x;
     color: #FFFFFF;
+    margin-top: 20px;
+}
+/* ++++++++++++++ */
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
+  
+  @-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  /* ++++++++++++++ */
+
+.fa-asterisk {
+    size: 7x;
+    color: #FFFFFF;
+    margin-top: 10px;
 }
 /* ========================== */
 /* Nav */
@@ -233,7 +298,7 @@ width: 100%;
     line-height: 18px;
     padding: 15px;
 }
-
+/* ++++++++++++++ */
 figure.effect {
 	background: #bf5700;
 	color: #FFF;
@@ -306,12 +371,24 @@ figure.effect:hover p {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
+/* ++++++++++++++ */
 /* ========================== */
 #contact {
-    height: 300px;
+    /* height: 1000px; */
     background: #bf5700;
     color: white;
 }
+.red{
+    color:red;
+    }
+.form-area
+{
+    background-color: #FAFAFA;
+	padding: 10px 40px 60px;
+	margin: 10px 0px 60px;
+    border: 1px solid GREY;
+    width: 100%;
+	}
 /* ========================== */
 /* ========================== */
 /* ========================== */
