@@ -1,109 +1,259 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Basic Portfolio</title>
-    <!-- CSS Files-->
-    <!-- reset.css is for cross browser normalization -->
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Christopher Demeke</title>
 </head>
+<!-- scroll spy for navigation bar -->
 
-<body>
-    <!-- Header section includes name plate and nav bar-->
-    <header>
-        <div class="yourName">
-            <h1>Christopher Demeke</h1>
+<body data-spy="scroll" data-target="#navbar-hover">
+
+    <div id="top" class="jumbotron">
+        <div class="container">
+            <h1 class="display-4">Christopher Demeke</h1>
+            <p class="top">Web Developer | Engineer | Project Leader</p>
+            <hr class="my-4">
+            <p class="top"> If your having Overflow Errors I feel bad for you son, I got 99 problems but but my Stack ain't one.</p>
         </div>
-        <nav>
-            <ul>
-                <!-- Links to each html page in folder-->
-                <li>
-                    <a href="./index.html">About</a>
-                </li>
-                <li id="navport">
-                    <a href="./portfolio.html">Portfolio</a>
-                </li>
-                <li>
-                    <a href="./contact.html">Contact </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-
-    <!-- Wrapper contains all page content-->
-    <div class="wrapper">
-        <section class="pageContent">
-            <div class="pageName">
-                <h2>About Me</h2>
-            </div>
-            <div class="biotext">
-                <img id="bioImage" src="./assets/images/Chris.jpg" alt="Christopher Demeke">
-
-                <p>
-                    Hello, I'm Chris welcome to my site.
-                </p>
-                <br>
-                <!-- <p>
-                    I spent most of my life in Texas. I grew up in Houston and went to school for engineering in Austin "Hook'em Horns".
-                </p>
-                <br> -->
-                <!-- <p>
-                    A few things about me is I like sports mainly basketball and soccer. I love to read fiction any thing in the Geek, Nerd,
-                    Adventure spectrum if your looking for recommendations just contact me.
-                </p>
-                <br>
-                <p>
-                    I've worked all over the United States, and even internationally to places like Canada, Russia, China, Turkey, and South
-                    Africa. China is my favorite place to work it so different and the food is great.
-                </p> -->
-                <!-- <br>
-                <p>
-                    I like to travel out side of work as well. A few places I'd recommend are Japan, Hong Kong, Thailand, Germany, Hungary, Czech
-                    Republic, Netherlands, Austria, and many others.
-                </p> -->
-                <br>
-                <p>
-                    For the past 10 years I've been an expert in oilfield services execution primarily drilling operational support, and new
-                    product development. My most enjoyable experiences have been in the many aspects of software development.
-                </p>
-                <br>
-                <p>I am now an ambitious Full Stack Web Developer, with a passion for engineering , operations, and product
-                    development. I have recently wrapped up a full stack flex program at the University of Texas at Austin
-                    in Web Development and looking for opportunities to build high performing applications with a technology
-                    leading company.
-                </p>
-
-            </div>
-        </section>
-
-        <!-- Section contains links to github, linked, and stackoverflow-->
-        <section class="linkBlock">
-            <div class="connectWM">
-                <h3>Connect with Me</h3>
-            </div>
-            <div class="links">
-                <a href="https://www.github.com">
-                    <img id="github-link" src="./assets/images/GitHub/github.png" alt="github-mark">
-                </a>
-                <a href="https://www.linkedin.com/in/christopher-demeke/">
-                    <img id="linkedin-link" src="./assets/images/LinkedIn/Linkedin.png" alt="linkedin-mark">
-                </a>
-                <a href="https://www.stackoverflow.com">
-                    <img id="stackoverflow-link" src="./assets/images/Stackoverflow/stackoverflow.png" alt="stackoverflow-mark">
-                </a>
-            </div>
-        </section>
+        <div class="overlay"></div>
+        <a href="#about" class="scroll-down rounded-top">
+            <i class="fas fa-chevron-down fa-5x"></i>
+        </a>
     </div>
 
+    <nav id="navbar-hover" class="navbar rounded-bottom">
+        <a class="navbar-nav"></a>
 
-    <footer>
-        <div class="footText">
-            <h4> &copy; Copyright 2018 Christopher Demeke</h4>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01"></div>
+
+
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
         </div>
-    </footer>
+    </nav>
+
+    <div class="background-white">
+        <div id="about" class="container">
+            <h2>Profile</h2>
+            <p class="lead"> I'am a Full Stack Web Developer</p>
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>About Me</h3>
+                    <p>
+                        Ambitious Full Stack Web Developer, with a passion for engineering, operations, and product development.
+                        <br> Previous to my web developent specialization my background was operations and product development
+                        focused in oilfield technology. My interests include technology, graphics, and sports.
+                    </p>
+                </div>
+                <div class="col-md-4 ">
+                    <img src="./assets/images/Chris2.jpg" alt="Chris">
+                </div>
+                <div class="col-md-4 ">
+                    <h3>Details</h3>
+                    <p>
+                        <strong>Name:</strong>
+                        <br /> Christopher Demeke
+                        <br />
+                        <strong>Age: </strong>
+                        <br /> 33 years
+                        <br />
+                        <strong>Location:</strong>
+                        <br /> Houston, Texas, USA
+                    </p>
+                </div>
+            </div>
+
+
+            <div id="portfolio" class="container">
+                <h2>Portfolio</h2>
+                <p class="lead">
+                    Collection of my work.
+                </p>
+                <hr>
+                <!-- RPS Tile -->
+                <div class="row">
+                    <div class="col-md-5 col-sm-12 col-xs-12 tile">
+                        <figure class="effect rounded">
+                            <img class="box" src="./assets/images/portfolio/rock_paper_lizard_spock_by_allicaleb.png" alt="RPS-Multiplayer" />
+                            <figcaption>
+                                <h3>RPSLSp Game</h3>
+                                <p>Two player "rock, paper, scissors, lizard, spock" game.</p>
+                                <p>
+                                    <strong>Tags: </strong> Bootstrap, jQuery, Firebase</p>
+                                <a href="https://cdemeke1227.github.io/RPS-Multiplayer/" target="_blank">Try It!</a>
+                                <span class="icon rounded">
+                                    <i class="fas fa-external-link-alt fa-2x"></i>
+                                </span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!-- Black Panther Tile -->
+                    <div class="col-md-5 col-sm-12 col-xs-12 tile">
+                        <figure class="effect rounded">
+                            <img class="box" src="./assets/images/portfolio/black-panther.jpg" alt="black-panther" />
+                            <figcaption>
+                                <h3>Role Playing Game</h3>
+                                <p>Black Panther Theme</p>
+                                <p>
+                                    <strong>Tags: </strong>HTML, CSS, jquery, and javascript</p>
+                                <a href="https://cdemeke1227.github.io/RPG-Game/" target="_blank">Try It!</a>
+                                <span class="icon rounded">
+                                    <i class="fas fa-external-link-alt fa-2x"></i>
+                                </span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <!-- +++++++ -->
+                <div class="row">
+                    <div class="col-md-5 col-sm-12 col-xs-12 tile">
+                        <figure class="effect rounded">
+                            <img class="box" src="./assets/images/portfolio/giftastics.gif" alt="Giftastic" />
+                            <figcaption>
+                                <h3>Giftastic</h3>
+                                <p>Using Giphy and Ticketmaster APIs</p>
+                                <p>
+                                    <strong>Tags: </strong>Boostrap, Javascript, Jquery, and AJAX</p>
+                                <a href="https://cdemeke1227.github.io/Giftastic" target="_blank">Try It!</a>
+                                <span class="icon rounded">
+                                    <i class="fas fa-external-link-alt fa-2x"></i>
+                                </span>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-md-5 col-sm-12 col-xs-12 tile">
+                        <figure class="effect rounded">
+                            <img class="box" src="./assets/images/portfolio/crystal.jpg" alt="Crystal-Collector" />
+                            <figcaption>
+                                <h3>Crystal Collector Game</h3>
+                                <p>Can you guess the magic number?</p>
+                                <p>
+                                    <strong>Tags: </strong>HTML, CSS, and javascript</p>
+                                <a href="https://cdemeke1227.github.io/week-4-game/" target="_blank">Try It!</a>
+                                <span class="icon rounded">
+                                    <i class="fas fa-external-link-alt fa-2x"></i>
+                                </span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5 col-sm-12 col-xs-12 tile">
+                        <figure class="effect rounded">
+                            <img class="box" src="./assets/images/portfolio/Hangman.jpg" alt="Hangman" />
+                            <figcaption>
+                                <h3>Hangman Game</h3>
+                                <p>This is a superhero themed hangman game</p>
+                                <p>
+                                    <strong>Tags: </strong>Bootstrap, HTML, CSS, and javascript</p>
+                                <a href="https://cdemeke1227.github.io/Hangman-Game/" target="_blank">Try It!</a>
+                                <span class="icon rounded">
+                                    <i class="fas fa-external-link-alt fa-2x"></i>
+                                </span>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-md-5 col-sm-12 col-xs-12 tile">
+                        <figure class="effect rounded">
+                            <img class="box" src="./assets/images/portfolio/tictactoe.png" alt="Tic-Tac-Toe" />
+                            <figcaption>
+                                <h3>Tic-Tac-Toe</h3>
+                                <p>Simple Tic-Tac-Toe Game vs computer</p>
+                                <p>
+                                    <strong>Tags: </strong>Bootstrap, HTML, CSS, and javascript</p>
+                                <a href="https://cdemeke1227.github.io/Tic-Tac-Toe/" target="_blank">Try It!</a>
+                                <span class="icon rounded">
+                                    <i class="fas fa-external-link-alt fa-2x"></i>
+                                </span>
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                </div>
+
+
+                <p class="lead">
+                    Node.js Apps
+                </p>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-5 col-sm-12 col-xs-12 tile">
+                        <figure class="effect rounded">
+                            <img class="box" src="./assets/images/portfolio/placeholders/business-code-coding-943096.jpg" alt="LIRI" />
+                            <figcaption>
+                                <h3>LIRI Node App</h3>
+                                    <p>LIRI is a Language Interpretation and Recognition Interface. </p>
+                                    <p>
+                                        <strong>Tags: </strong>Node.js</p>
+                                    <a href="https://github.com/Cdemeke1227/liri-node-app.git" target="_blank">Try It!</a>
+                                    <span class="icon rounded">
+                                        <i class="fas fa-external-link-alt fa-2x"></i>
+                                    </span>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-md-5 col-sm-12 col-xs-12 tile">
+                        <figure class="effect rounded">
+                            <img class="box" src="./assets/images/portfolio/placeholders/code-coding-computer-34676.jpg" alt="bamAMAZON" />
+                            <figcaption>
+                                <h3>bamAMAZON</h3>
+                                <p>bamAMAZON is a Naurto themed storefront that tracks equipment inventory.</p>
+                                <p>
+                                    <strong>Tags: </strong>Node.js, MySQL</p>
+                                <a href="https://github.com/Cdemeke1227/bamazon.git" target="_blank">Try It!</a>
+                                <span class="icon rounded">
+                                    <i class="fas fa-external-link-alt fa-2x"></i>
+                                </span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="contact" class="container">
+                <h2>Contact Me</h2>
+            </div>
+        </div>
+
+        <!-- Ajax CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- JQuery CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Popper CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <!-- Bootstrap Javascript CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <!-- Font Awesom CDN -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+            crossorigin="anonymous"></script>
+        <!-- Custom Javascript -->
+        <script src="./assets/javascript/script.js"></script>
 </body>
 
 </html>
