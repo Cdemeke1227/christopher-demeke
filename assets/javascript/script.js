@@ -61,7 +61,7 @@ $(document).ready(function () {
 	}
 
 	function applyScrollSpy() {
-		$('#navbar-example').on('activate.bs.scrollspy', function () {
+		$('#navbar-hover').on('activate.bs.scrollspy', function () {
 			window.location.hash = $('.nav .active a').attr('href').replace('#', '#/');
 		});
 	}
