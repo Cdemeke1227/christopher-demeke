@@ -13,27 +13,13 @@ $(document).ready(function () {
 	}
 	function Clearing() {
 		$('.clearing').css({ height: (($(window).height())/2) + 'px' });
-		$('#placeholder2 .overlay').css({ height: (($(window).height())/2) + 'px' });
 	}
 	// ==========================
 	// Navbar Function Group
 	function Navbar() {
-		NavbarFixForPhone();
-		ScrollSpy();
 		StickyNavbar();
 	}
 
-	function NavbarFixForPhone() {
-		// $('.navbar li a').click(function (e) {
-		// 	$('.navbar-collapse').removeClass('in').addClass('collapse');
-		// });
-	}
-
-	function ScrollSpy() {
-		// $('#navbar-hover').on('activate.bs.scrollspy', function () {
-		// 	window.location.hash = $('.nav .active a').attr('href').replace('#', '#/');
-		// });
-	}
 	// Checks to see if the scroll location is below nave start location
 	function StickyNavbar() {
 		stickyNavbar = $('.scroll-down').offset().top + 20;
