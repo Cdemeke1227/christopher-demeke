@@ -12,7 +12,7 @@ $(document).ready(function () {
 		$('.jumbotron').css({ height: ($(window).height()) + 'px' });
 	}
 	function Clearing() {
-		$('.clearing').css({ height: (($(window).height())/2) + 'px' });
+		$('.clearing').css({ height: (($(window).height())/3) + 'px' });
 	}
 	// ==========================
 	// Navbar Function Group

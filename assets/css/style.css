@@ -249,7 +249,7 @@ border-radius: 50%;
 /* ========================== */
 /* Placeholder2 */
 #placeholder2 {
-    /* background-color: #030406; */
+    background-color: #F3EFE0;
     background-image: url("../images/backgrounds/cup-of-coffee-1280537_1280.jpg");
     /* background-image: url("../images/backgrounds/monitor-1307227_1280.jpg"); */
     background-position: center; 
@@ -267,7 +267,7 @@ border-radius: 50%;
     color: #FFFFFF;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding: 0px;
+    padding: 
 }
 
 .clearing  {
