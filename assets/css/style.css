@@ -1,7 +1,6 @@
 html, body {
     background: #434242;
     font-family: 'Open Sans', sans-serif !important;
-    /* height: 100%; */
 }
 body {
     background: #F3EFE0;
@@ -10,24 +9,26 @@ body {
 }
 /* ========================== */
 
-h1, h2, h3, h4, {
-    font-family: 'Open Sans', sans-serif !important;
-    /* margin-bottom: 20px; */
-}
 h1 {
     font-weight: 700;
     margin-bottom: 10px;
 }
-h2,h3 {
+h2 {
+    font-weight: 300;
+    color: #bf5700;
+    /* margin-bottom: 10px; */
+    text-align: center;
+}
+h3 {
     font-weight: 300;
     color: #bf5700;
     /* margin-bottom: 10px; */
 }
-h2 {
-    /* font-size: 50px; */
-    text-align: center;
+p {
+    display: block;
+    color: #727878;
+    font-weight: 200;
 }
-
 p.top {
     font-size: 1.2rem;
     text-align: center;
@@ -38,11 +39,7 @@ p.lead {
     text-align: center;
     color: #727878;
 }
-p {
-    display: block;
-    color: #727878;
-    font-weight: 200;
-}
+
 figcaption h3 {
     color: #FFF;
     font-size: 1rem;
@@ -53,17 +50,17 @@ figcaption p {
 }
 
 /* ========================== */
+/* Jumbotron Section */
 .jumbotron {
     background-color: #030406;
     background-image: url("../images/backgrounds/black-and-white-blur-gray-34088.jpg");
     background-position: center; 
     background-size: cover;
     background-repeat: no-repeat;
-    background-origin: right;
+    /* background-origin: right; */
     background-attachment: fixed;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    /* display: block; */
 }
 .jumbotron .container {
     position: relative;
@@ -81,9 +78,7 @@ figcaption p {
     opacity: 0.75;
     filter:alpha(opacity=75);
     z-index: 2; 
-    
 }
-
 .jumbotron .scroll-down {
     height: 100px;
     width: 100px;
@@ -96,22 +91,21 @@ figcaption p {
     z-index: 6;
 }
 .fa-chevron-down {
-    /* size: 7x; */
     color: #FFFFFF;
     margin-top: 20px;
 }
 .fa-angle-right {
-    /* size: 7x; */
     color: #FFFFFF;
     margin-top: 20px;
 }
 /* ++++++++++++++ */
+/* Chevron Down Animation */
 .bounce {
     -moz-animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
   }
-  
+
   @-moz-keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
       -moz-transform: translateY(0);
@@ -162,10 +156,8 @@ figcaption p {
   }
   /* ++++++++++++++ */
 
-
 /* ========================== */
-/* Nav */
-
+/* Navbar Style */
 .navbar {
     border: 0px;
     background-color: #222222;
@@ -174,10 +166,7 @@ figcaption p {
     right: 5%;
     z-index: 999;
     position: absolute;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding: 0px;
 }
 .navbar .navbar-collapse {
     padding: 0px;
@@ -186,9 +175,6 @@ figcaption p {
 .navbar .nav {
     margin: 0px;
 }
-/* .nav-pills {
-    border: 1px solid #727878;
-} */
 .nav-item {
     display: block;
     float: none;
@@ -212,15 +198,17 @@ figcaption p {
     top: 60px;
 }
 /* ========================== */
-.container { 
+.background-white .container { 
     max-width: 1280px;
     padding: 40px 180px;
-}
-
-.background-white {
     background: #FFFFFF;
 }
 /* ========================== */
+/* Profile Section Style */
+#profile {
+    /* height: 300px; */
+    /* margin-bottom: 20px; */
+}
 .profileRow {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -228,27 +216,68 @@ figcaption p {
 .profileColDetails {
     margin-left: 20px;
 }
-#about {
-    /* height: 300px; */
-    margin-bottom: 20px;
-}
-#about .row > div img {
+.profileColImg {
 width: 100%;
 max-width: 400px;
 height: auto;
 border-radius: 50%;
 }
 /* ========================== */
-/* ========================== */
-.tile {
-    margin-right: 30px;
+/* Placeholder1 */
+#placeholder1 {
+    background-color: #030406;
+    background-image: url("../images/backgrounds/black-and-white-books-design-34627.jpg");
+    background-position: center; 
+    background-size: auto;
+    background-repeat: no-repeat;
+    /* background-origin: right; */
+    background-attachment: fixed;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
+#placeholder1 .container {
+    position: relative;
+    text-align: center;
+    z-index: 4;
+    color: #FFFFFF;
+}
+
+.clearing  {
+    /* height: 0px; */
+}
+/* ========================== */
+/* ========================== */
+/* Placeholder2 */
+#placeholder2 {
+    background-color: #030406;
+    background-image: url("../images/backgrounds/cup-of-coffee-1280537_1280.jpg");
+    /* background-image: url("../images/backgrounds/monitor-1307227_1280.jpg"); */
+    background-position: center; 
+    background-size: auto;
+    background-repeat: no-repeat;
+    /* background-origin: right; */
+    background-attachment: fixed;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+#placeholder2 .container {
+    position: relative;
+    text-align: center;
+    z-index: 4;
+    color: #FFFFFF;
+}
+
+.clearing  {
+    /* height: 0px; */
+}
+/* ========================== */
+/* Portfolio Section */
 #portfolio {
     /* margin-bottom: 20px; */
     background-color: #F3EFE0;
 }
-#porfolio .row > div {
-    margin-bottom: 30px;
+.portfolioTile {
+    margin-right: 30px;
 }
 #porffolio figure {
     position: relative;
@@ -287,7 +316,6 @@ left: 0px;
 height: 100%;
 width: 100%;
 }
-
 #portfolio figure .icon {
     background: #bf5700;
     position: absolute;
@@ -302,7 +330,6 @@ figure.effect {
 	background: #bf5700;
 	color: #FFF;
 }
-
 figure.effect img {
 	width: -webkit-calc(100% + 20px);
 	width: calc(100% + 20px);
@@ -313,17 +340,14 @@ figure.effect img {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
-
 figure.effect:hover img {
 	opacity: 0.2;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
-
 figure.effect figcaption {
 	text-align: left;
 }
-
 figure.effect h3 {
 	position: relative;
 	overflow: hidden;
@@ -332,11 +356,9 @@ figure.effect h3 {
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 }
-
 figure.effect:hover h3 {
 	opacity: 1;
 }
-
 figure.effect h3::after {
 	position: absolute;
 	bottom: 0;
@@ -350,12 +372,10 @@ figure.effect h3::after {
 	-webkit-transform: translate3d(-100%,0,0);
 	transform: translate3d(-100%,0,0);
 }
-
 figure.effect:hover h3::after {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
-
 figure.effect p {
 	padding-top: 10px;
 	opacity: 0;
@@ -364,30 +384,49 @@ figure.effect p {
 	-webkit-transform: translate3d(100%,0,0);
 	transform: translate3d(100%,0,0);
 }
-
 figure.effect:hover p {
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
 /* ++++++++++++++ */
+
 /* ========================== */
+/* Contact Section Style */
 #contact {
     /* height: 1000px; */
     background: #bf5700;
-    color: white;
+    color: #FFFFFF;
+}
+#contact h2 {
+    color: #FFFFFF;
 }
 .red{
     color:red;
     }
-.form-area
+#contact .form-area
 {
-    background-color: #FAFAFA;
+    background-color: #F3EFE0;
 	padding: 10px 40px 60px;
 	margin: 10px 0px 60px;
     border: 1px solid GREY;
     width: 100%;
-	}
+    }
+#contact .form-area .btn {
+    color: #FFFFFF;
+}
+#contact .btn .btn li {
+    text-decoration: none;
+}
+.fa-linkedin {
+    color: #0077B5;
+}
+.fa-github-square {
+    color: #24292e;
+}
+.fa-stack-overflow {
+    color: #f48024;
+}
 /* ========================== */
 @media (max-width: 767px) {
     
@@ -396,10 +435,10 @@ figure.effect:hover p {
         padding: 0px;
         /* padding: 40px; */
     }
-    
     .jumbotron .scroll-down {
         width: 100%;
         right: 0px;
+        
     }
     .jumbotron .display-4 {
         font-size: 2.1rem;
@@ -420,7 +459,6 @@ figure.effect:hover p {
         text-align: center;
         overflow: hidden;
     }
-
     .navbar {
         left: 0px;
         width: 100%;
@@ -435,10 +473,8 @@ figure.effect:hover p {
         font-weight: 600;
         color: #FFFFFF;
     }
-
-    
-    .container {
-        padding: 80px 30px;
+    .background-white .container {
+        padding: 80px 40px;
         min-width: 280px;
     }
     .profileRow h3 {
@@ -448,18 +484,14 @@ figure.effect:hover p {
         text-align: center;
         margin-top: 20px;
     }
- 
-
     .fixed .navbar {
         position: fixed;
         top: 0px;
     }
-
     #portfolio figure img {
         width: 100%;
         border-radius: 0%;
     }
-
 
 
 }

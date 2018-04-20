@@ -1,181 +1,69 @@
-var lnStickyNavigation;
-
+// ==========================
 $(document).ready(function () {
-	applyHeader();
-	applyNavigation();
-	applyMailTo();
-	applyResize();
-	// checkHash();
-	checkBrowser();
-
-
-	/* HEADER FUNCTIONS */
-
-	function applyHeader() {
+	// ==========================
+	var stickyNavbar;
+	// ==========================
+	Header();
+	Clearing();
+	Navbar();
+	Resize();
+	// ==========================
+	function Header() {
 		$('.jumbotron').css({ height: ($(window).height()) + 'px' });
-
-		lazyLoad($('.jumbotron'));
+	}
+	function Clearing() {
+		$('.clearing').css({ height: (($(window).height())/2) + 'px' });
+		$('#placeholder2 .overlay').css({ height: (($(window).height())/2) + 'px' });
+	}
+	// ==========================
+	// Navbar Function Group
+	function Navbar() {
+		NavbarFixForPhone();
+		ScrollSpy();
+		StickyNavbar();
 	}
 
-	function lazyLoad(poContainer) {
-		/*var lstrSource   = poContainer.attr('data-src');
-		var lstrPosition = poContainer.attr('data-position');
-	
-		$('<img>').attr('src', lstrSource).load(function()
-		{
-			poContainer.css('background-image', 'url("'+ lstrSource +'")');
-			poContainer.css('background-position', lstrPosition);
-			poContainer.css('-ms-filter', '"progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\'' + lstrSource + '\', sizingMethod=\'scale\')"');
-			poContainer.css('filter', 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\'' + lstrSource + '\', sizingMethod=\'scale\'');
-		});*/
-	}
-	/* NAVIGATION FUNCTIONS */
-	function applyNavigation() {
-		// applyClickEvent();
-		applyNavigationFixForPhone();
-		applyScrollSpy();
-		applyStickyNavigation();
+	function NavbarFixForPhone() {
+		// $('.navbar li a').click(function (e) {
+		// 	$('.navbar-collapse').removeClass('in').addClass('collapse');
+		// });
 	}
 
-	// function applyClickEvent()
-	// {
-	// 	$('a[href*=#]').on('click', function(e)
-	// 	{
-	// 		e.preventDefault();
-
-	// 		if( $( $.attr(this, 'href') ).length > 0 )
-	// 		{
-	// 			$('html, body').animate(
-	// 			{
-	// 				scrollTop: $( $.attr(this, 'href') ).offset().top
-	// 			}, 400);
-	// 		}
-	// 		return false;
-	// 	});
-	// }
-
-	function applyNavigationFixForPhone() {
-		$('.navbar li a').click(function (event) {
-			$('.navbar-collapse').removeClass('in').addClass('collapse');
-		});
+	function ScrollSpy() {
+		// $('#navbar-hover').on('activate.bs.scrollspy', function () {
+		// 	window.location.hash = $('.nav .active a').attr('href').replace('#', '#/');
+		// });
 	}
-
-	function applyScrollSpy() {
-		$('#navbar-hover').on('activate.bs.scrollspy', function () {
-			window.location.hash = $('.nav .active a').attr('href').replace('#', '#/');
-		});
-	}
-
-	function applyStickyNavigation() {
-		lnStickyNavigation = $('.scroll-down').offset().top + 20;
+	// Checks to see if the scroll location is below nave start location
+	function StickyNavbar() {
+		stickyNavbar = $('.scroll-down').offset().top + 20;
 
 		$(window).on('scroll', function () {
-			stickyNavigation();
+			stickstickyNavbarHover();
 		});
 
-		stickyNavigation();
+		stickstickyNavbarHover();
 	}
-
-	function stickyNavigation() {
-		if ($(window).scrollTop() > lnStickyNavigation) {
+	// Gets the scroll location and changes navbar to sticky
+	function stickstickyNavbarHover() {
+		if ($(window).scrollTop() > stickyNavbar) {
 			$('body').addClass('fixed ');
 		}
 		else {
 			$('body').removeClass('fixed');
 		}
 	}
-
-	/* MAILTO FUNCTION */
-
-	function applyMailTo() {
-		$('a[href*=mailto]').on('click', function (e) {
-			var lstrEmail = $(this).attr('href').replace('mailto:', '');
-
-			lstrEmail = lstrEmail.split('').reverse().join('')
-
-			$(this).attr('href', 'mailto:' + lstrEmail);
-		});
-	}
-
-	/* RESIZE FUNCTION */
-
-	function applyResize() {
+	// ==========================
+	function Resize() {
 		$(window).on('resize', function () {
-			lnStickyNavigation = $('.scroll-down').offset().top + 20;
+			stickyNavbar = $('.scroll-down').offset().top + 20;
 
 			$('.jumbotron').css({ height: ($(window).height()) + 'px' });
 		});
 	}
-
-	/* HASH FUNCTION */
-
-	// function checkHash()
-	// {
-	// 	lstrHash = window.location.hash.replace('#/', '#');
-
-	// 	if($('a[href='+ lstrHash +']').length > 0)
-	// 	{
-	// 		$('a[href='+ lstrHash +']').trigger('click');
-	// 	}
-	// }
-
-	/* IE7- FALLBACK FUNCTIONS */
-
-	function checkBrowser() {
-		var loBrowserVersion = getBrowserAndVersion();
-
-		if (loBrowserVersion.browser == 'Explorer' && loBrowserVersion.version < 8) {
-			$('#upgrade-dialog').modal({
-				backdrop: 'static',
-				keyboard: false
-			});
-		}
-	}
-
-	function getBrowserAndVersion() {
-		var laBrowserData = [{
-			string: navigator.userAgent,
-			subString: 'MSIE',
-			identity: 'Explorer',
-			versionSearch: 'MSIE'
-		}];
-
-		return {
-			browser: searchString(laBrowserData) || 'Modern Browser',
-			version: searchVersion(navigator.userAgent) || searchVersion(navigator.appVersion) || '0.0'
-		};
-	}
-
-	function searchString(paData) {
-		for (var i = 0; i < paData.length; i++) {
-			var lstrDataString = paData[i].string;
-			var lstrDataProp = paData[i].prop;
-
-			this.versionSearchString = paData[i].versionSearch || paData[i].identity;
-
-			if (lstrDataString) {
-				if (lstrDataString.indexOf(paData[i].subString) != -1) {
-					return paData[i].identity;
-				}
-			}
-			else if (lstrDataProp) {
-				return paData[i].identity;
-			}
-		}
-	}
-
-	function searchVersion(pstrDataString) {
-		var lnIndex = pstrDataString.indexOf(this.versionSearchString);
-
-		if (lnIndex == -1) {
-			return;
-		}
-
-		return parseFloat(pstrDataString.substring(lnIndex + this.versionSearchString.length + 1));
-	}
-
-
-
+	// ==========================
+	// Contact Form Logic
+	// https://bootsnipp.com/snippets/featured/simple-contact-form
 
 	$('#characterLeft').text('140 characters left');
 	$('#message').keydown(function () {
@@ -193,5 +81,6 @@ $(document).ready(function () {
 			$('#characterLeft').removeClass('red');
 		}
 	});
+	// ==========================
 
 });
