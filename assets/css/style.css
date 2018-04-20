@@ -230,7 +230,7 @@ border-radius: 50%;
     background-position: center; 
     background-size: auto;
     background-repeat: no-repeat;
-    /* background-origin: right; */
+    background-origin: right;
     background-attachment: fixed;
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -249,13 +249,13 @@ border-radius: 50%;
 /* ========================== */
 /* Placeholder2 */
 #placeholder2 {
-    background-color: #030406;
+    /* background-color: #030406; */
     background-image: url("../images/backgrounds/cup-of-coffee-1280537_1280.jpg");
     /* background-image: url("../images/backgrounds/monitor-1307227_1280.jpg"); */
     background-position: center; 
     background-size: auto;
     background-repeat: no-repeat;
-    /* background-origin: right; */
+    background-origin: right;
     background-attachment: fixed;
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -265,6 +265,9 @@ border-radius: 50%;
     text-align: center;
     z-index: 4;
     color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
 }
 
 .clearing  {
