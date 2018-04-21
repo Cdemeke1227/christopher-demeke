@@ -3,35 +3,35 @@ $(document).ready(function () {
 	// ==========================
 	var stickyNavbar;
 	// ==========================
-	Header();
-	Clearing();
-	Navbar();
-	Resize();
+	header();
+	clearing();
+	navbar();
+	resize();
 	// ==========================
-	function Header() {
+	function header() {
 		$('.jumbotron').css({ height: ($(window).height()) + 'px' });
 	}
-	function Clearing() {
+	function clearing() {
 		$('.clearing').css({ height: (($(window).height())/3) + 'px' });
 	}
 	// ==========================
 	// Navbar Function Group
-	function Navbar() {
-		StickyNavbar();
+	function navbar() {
+		stickyNavbar();
 	}
 
 	// Checks to see if the scroll location is below nave start location
-	function StickyNavbar() {
+	function stickyNavbar() {
 		stickyNavbar = $('.scroll-down').offset().top + 20;
 
 		$(window).on('scroll', function () {
-			stickstickyNavbarHover();
+			stickyNavbarHover();
 		});
 
-		stickstickyNavbarHover();
+		stickyNavbarHover();
 	}
 	// Gets the scroll location and changes navbar to sticky
-	function stickstickyNavbarHover() {
+	function stickyNavbarHover() {
 		if ($(window).scrollTop() > stickyNavbar) {
 			$('body').addClass('fixed ');
 		}
@@ -40,7 +40,7 @@ $(document).ready(function () {
 		}
 	}
 	// ==========================
-	function Resize() {
+	function resize() {
 		$(window).on('resize', function () {
 			stickyNavbar = $('.scroll-down').offset().top + 20;
 
@@ -50,6 +50,14 @@ $(document).ready(function () {
 	// ==========================
 	// Contact Form Logic
 	// https://bootsnipp.com/snippets/featured/simple-contact-form
+	$('#submit').on("click", function () {
+		var name = $('#name').val();
+		var email = $('#email').val();
+		var subject = $('#subject').val();
+		var message = $('#message').val();
+		window.open(`mailto:christopher.demeke@gmail.com?cc=${email}&subject=${name}: ${subject}&body=${message}`);
+
+	});
 
 	$('#characterLeft').text('140 characters left');
 	$('#message').keydown(function () {
