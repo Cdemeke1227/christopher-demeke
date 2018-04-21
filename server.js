@@ -5,7 +5,7 @@ var PORT = process.env.PORT || 3000
 var app = express();
 
 // Static Files: CSS, Images, Javascript
-app.use(express.static(__dirname+'/public'));
+app.use(express.static(__dirname + '/public/'));
 
 // Routes
 app.get("/", function(req, res) {
