@@ -205,10 +205,6 @@ figcaption p {
 }
 /* ========================== */
 /* Profile Section Style */
-#profile {
-    /* height: 300px; */
-    /* margin-bottom: 20px; */
-}
 .profileRow {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -243,7 +239,7 @@ border-radius: 50%;
 }
 
 .clearing  {
-    /* height: 0px; */
+    height: 0px;
 }
 /* ========================== */
 /* ========================== */
@@ -267,11 +263,10 @@ border-radius: 50%;
     color: #FFFFFF;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding: 
+    padding: 0px;
 }
-
 .clearing  {
-    /* height: 0px; */
+    height: 0px;
 }
 /* ========================== */
 /* Portfolio Section */
