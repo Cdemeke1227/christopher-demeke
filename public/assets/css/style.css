@@ -285,7 +285,7 @@ border-radius: 50%;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-#porffolio figure {
+#porrfolio figure {
     position: relative;
     overflow: hidden;
 }
@@ -297,7 +297,9 @@ border-radius: 50%;
 #portfolio figure img {
     width: 100%;
     border-radius: 50%;
+    border: 1px solid #030406
 }
+
 #portfolio figure figcaption {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -432,6 +434,20 @@ figure.effect:hover p {
 }
 .fa-stack-overflow {
     color: #f48024;
+}
+/* ========================== */
+footer {
+    /* position: fixed; */
+    bottom: 0;
+    border-top: 5px solid #222222;
+    background-color: #434242;
+    /* height: 10px; */
+    width: 100%;
+}
+.footText {
+    padding: 12px;
+    color: #FFFFFF;
+    text-align: center;
 }
 /* ========================== */
 @media (max-width: 767px) {

@@ -1,0 +1,23 @@
+{
+  "name": "christopher-demeke-web-portfolio",
+  "version": "1.0.0",
+  "description": "web-portfolo-site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cdemeke1227/christopher-demeke.git"
+  },
+  "author": "Christopher Demeke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cdemeke1227/christopher-demeke/issues"
+  },
+  "homepage": "https://github.com/Cdemeke1227/christopher-demeke#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  }
+}
