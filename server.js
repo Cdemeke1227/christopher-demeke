@@ -1,11 +1,11 @@
 var express = require("express");
 var path = require("path");
-var PORT = process.env.PORT || 3000
+var PORT = process.env.PORT || 25282
 
 var app = express();
 
 // Static Files: CSS, Images, Javascript
-app.use(express.static(__dirname + '/public/'));
+app.use(express.static(__dirname + '/public/gi'));
 
 // Routes
 app.get("/", function(req, res) {
