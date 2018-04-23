@@ -287,8 +287,10 @@ border-radius: 50%;
     margin-top: 25px;
     right: 0px;
 }
-.fa-git-square {
+
+#portfolio .fa-github-square {
     color: #24292e;
+    background-color: #F3EFE0;
 }
 #portfolio figure h3 {
     color: #FFF;
@@ -415,32 +417,32 @@ figure.effect:hover p {
     text-decoration: none;
 }
 .fa-file-alt {
-    color: #24292e;
-    background-color: white
+    color: #FFFFFF;
+    background-color: #222222;
 }
 .fa-linkedin {
     color: #0077B5;
-    background-color: white
+    background-color: #222222;
 }
 .fa-github-square {
-    color: #24292e;
-    background-color: white
+    color: #FFFFFF;
+    background-color: #222222;
 }
 .fa-stack-overflow {
     color: #f48024;
-    background-color: white
+    background-color: #222222;
 }
 .fa-at {
-    color: #24292e;
-    background-color: white
+    color: #FFFFFF;
+    background-color: #222222;
 }
 .fa-phone {
     color: rgb(0, 122, 255);
-    background-color: white
+    background-color: #222222;
 }
 .fa-comment {
     color: rgb(76, 217, 100);
-    background-color: white
+    background-color: #222222;
 }
 /* ========================== */
 footer {
