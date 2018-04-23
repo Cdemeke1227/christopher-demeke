@@ -416,26 +416,31 @@ figure.effect:hover p {
 }
 .fa-file-alt {
     color: #24292e;
+    background-color: white
 }
 .fa-linkedin {
     color: #0077B5;
+    background-color: white
 }
 .fa-github-square {
     color: #24292e;
+    background-color: white
 }
 .fa-stack-overflow {
     color: #f48024;
+    background-color: white
 }
 .fa-at {
     color: #24292e;
+    background-color: white
 }
 .fa-phone {
-    color: #24292e;
     color: rgb(0, 122, 255);
+    background-color: white
 }
 .fa-comment {
-    /* color: #FFFFFF; */
     color: rgb(76, 217, 100);
+    background-color: white
 }
 /* ========================== */
 footer {
