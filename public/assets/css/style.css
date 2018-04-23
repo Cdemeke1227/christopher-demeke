@@ -72,7 +72,7 @@ figcaption p {
     background-color: #bf5700;
     position: absolute;
     top: 0px; 
-    bottom: 0px;
+    bottom: 100px;
     left: 0px; 
     right: 0px;
     opacity: 0.75;
@@ -97,6 +97,9 @@ figcaption p {
 .fa-angle-right {
     color: #FFFFFF;
     margin-top: 20px;
+}
+#contact .row .col {
+    margin-bottom: 20px;
 }
 /* ++++++++++++++ */
 /* Chevron Down Animation */
@@ -276,13 +279,16 @@ border-radius: 50%;
 }
 .portfolioTile {
     margin-left: 30px;
-    margin-right: 30px;
+    margin-right: 0px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-#porrfolio figure {
-    position: relative;
-    overflow: hidden;
+#portfolio .gitlink {
+    margin-top: 25px;
+    right: 0px;
+}
+.fa-git-square {
+    color: #24292e;
 }
 #portfolio figure h3 {
     color: #FFF;
@@ -308,26 +314,27 @@ border-radius: 50%;
 }
 
 #portfolio figure a {
-z-index: 1000;
-text-indent: 200%;
-white-space: nowrap;
-font-size: 0;
-opacity:0;
-position: absolute;
-top: 0px;
-left: 0px;
-height: 100%;
-width: 100%;
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity:0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
 }
 #portfolio figure .icon {
     background: #bf5700;
     position: absolute;
     top: 0px;
     right: 0px;
-}
-#portfolio figure .icon {
     padding: 15px;
+    border: 1px solid #FFFFFF    
 }
+
+
 /* ++++++++++++++ */
 figure.effect {
 	background: #bf5700;
@@ -398,28 +405,17 @@ figure.effect:hover p {
 /* Contact Section Style */
 #contact {
     /* height: 1000px; */
-    background: #bf5700;
+    
     color: #FFFFFF;
 }
 #contact h2 {
     color: #FFFFFF;
 }
-.red{
-    color:red;
-    }
-#contact .form-area
-{
-    background-color: #F3EFE0;
-	padding: 10px 40px 60px;
-	margin: 10px 0px 60px;
-    border: 1px solid GREY;
-    width: 100%;
-    }
-#contact .form-area .btn {
-    color: #FFFFFF;
-}
 #contact .btn .btn li {
     text-decoration: none;
+}
+.fa-file-alt {
+    color: #24292e;
 }
 .fa-linkedin {
     color: #0077B5;
@@ -430,19 +426,31 @@ figure.effect:hover p {
 .fa-stack-overflow {
     color: #f48024;
 }
+.fa-at {
+    color: #24292e;
+}
+.fa-phone {
+    color: #24292e;
+    color: rgb(0, 122, 255);
+}
+.fa-comment {
+    /* color: #FFFFFF; */
+    color: rgb(76, 217, 100);
+}
 /* ========================== */
 footer {
     /* position: fixed; */
     bottom: 0;
     border-top: 5px solid #222222;
-    background-color: #434242;
+    background-color: #222222;
     /* height: 10px; */
     width: 100%;
 }
-.footText {
+.footText p {
     padding: 12px;
-    color: #FFFFFF;
+    color: #434242;
     text-align: center;
+    margin-bottom: 0px;
 }
 /* ========================== */
 @media (max-width: 767px) {
@@ -509,7 +517,9 @@ footer {
         width: 100%;
         border-radius: 0%;
     }
-
+    #portfolio .gitlink {
+        display: none;
+    }
 
 }
 /* ========================== */
